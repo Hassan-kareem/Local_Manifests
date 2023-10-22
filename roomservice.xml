@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+    <include name="hardware/qcom-caf/wlan" />
+    <project path="hardware/qcom-caf/wlan" name="lwys-trash-oct23/android_hardware_qcom_wlan" revision="lineage-20.0-caf" />
+
+    <include name="device/samsung/qcom-common" />
+    <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" revision="lineage-20" />
+
+    <include name="hardware/samsung" />
+    <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" revision="lineage-20" />
+
+    <include name="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" revision="master" />
+
+    <include name="system/tools/dtbtool" />
+    <project path="system/tools/dtbtool" name="LineageOS/android_system_tools_dtbtool" revision="lineage-18.1" />
+
+    <include name="device/qcom/sepolicy-legacy" />
+    <project path="device/qcom/sepolicy-legacy" name="lwys-trash-oct23/android_device_qcom_sepolicy" revision="lineage-20.0-legacy" />
+
+    <include name="hardware/qcom-caf/msm8916/audio" />
+    <project path="hardware/qcom-caf/msm8916/audio" name="lwys-trash-oct23/android_hardware_qcom_audio" revision="lineage-20.0-caf-msm8916" />
+
+    <include name="hardware/qcom-caf/msm8916/media" />
+    <project path="hardware/qcom-caf/msm8916/media" name="LineageOS/android_hardware_qcom_media" revision="lineage-19.0-caf-msm8916" />
+
+    <include name="hardware/qcom-caf/msm8916/display" />
+    <project path="hardware/qcom-caf/msm8916/display" name="lwys-trash-oct23/android_hardware_qcom_display" revision="lineage-20.0-caf-msm8916" />
+
+    <include name="hardware/qcom-caf/msm8916" />
+    <project path="hardware/qcom-caf/msm8916" name="LineageOS/android_hardware_qcom-caf_common" revision="lineage-20.0" />
+
+    <include name="external/bson" />
+    <project path="external/bson" name="LineageOS/android_external_bson" revision="lineage-20" />
+
+    <include name="system/qcom" />
+    <project path="system/qcom" name="LineageOS/android_system_qcom" revision="lineage-20" />
+
+    <include name="hardware/sony/timekeep" />
+    <project path="hardware/sony/timekeep" name="LineageOS/android_hardware_sony_timekeep" revision="lineage-20" />
+
+ <!-- ... other repositories ... -->
+
+    <project name="lwys-trash-oct23/android_device_samsung_a5lte" path="device/samsung/a5lte" remote="github" revision="lineage-20.0" />
+
+    <project name="lwys-trash-oct23/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" remote="github" revision="lineage-20.0" />
+
+    <project name="lwys-trash-oct23/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="lineage-20.0" />
+  <!-- ... other repositories ... -->
+</manifest>
