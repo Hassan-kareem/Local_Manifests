@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-    <include name="hardware/qcom-caf/wlan" />
-    <project path="hardware/qcom-caf/wlan" name="lwys-trash-oct23/android_hardware_qcom_wlan" revision="lineage-20.0-caf" />
-
     <include name="device/samsung/qcom-common" />
     <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" revision="lineage-20" />
 
