@@ -8,5 +8,5 @@
 <project path="kernel/xiaomi/mido" name="PixelExperience-Devices/kernel_xiaomi_mido" remote="github" revision="thirteen" />
 
 <!-- Vendor Tree -->
-<project path="vendor/xiaomi/mido" name="NRanjan-17/vendor_xiaomi_mido" remote="github" revision="thirteen" />
+<project path="vendor/xiaomi/mido" name="android/vendor-blobs/vendor_xiaomi_mido" remote="gitlab" revision="thirteen" />
 </manifest>
