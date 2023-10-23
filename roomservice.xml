@@ -50,4 +50,5 @@
     <project name="lwys-trash-oct23/android_device_samsung_a5lte" path="device/samsung/a5lte" />
     <project name="lwys-trash-oct23/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" />
     <project name="lwys-trash-oct23/proprietary_vendor_samsung" path="vendor/samsung" />
+    <project path="device/samsung/a5-common" name="DeadSquirrel01/android_device_samsung_a5-common" revision="lineage-17.0" remote="github" />
 </manifest>
