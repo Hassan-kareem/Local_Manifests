@@ -13,7 +13,7 @@
     <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common"
         revision="lineage-20" /> <!-- it be like that -->
    
-    <remove-path name="/home/cirrus/roms/LineageOS-lineage-20.0/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin" />
+    <remove-project name="LineageOS-lineage-20.0/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin" />
 
     <!-- GCC 7.2 arm-eabi -->
     <!-- OK so now you may want to install multilib ... -->
