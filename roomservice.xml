@@ -41,8 +41,11 @@
 
     <project name="lwys-trash-oct23/android_device_samsung_a5lte" path="device/samsung/a5lte" remote="github" revision="lineage-20.0" />
 
-    <project name="lwys-trash-oct23/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" remote="github" revision="lineage-20.0" />
+    <project name="Galaxy-J5-Unofficial-LineageOS-Sources/samsung_kernel_msm8916" path="kernel/samsung/msm8916" revision="lineage-20.0" remote="Galaxy-J5-Unofficial-LineageOS-Sources"/>
 
     <project name="lwys-trash-oct23/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="lineage-20.0" />
+    <include name="device/samsung/a5-common" />
+<project path="device/samsung/a5-common" name="DeadSquirrel01/android_device_samsung_a5-common" revision="lineage-17.0" remote="github" />
   <!-- ... other repositories ... -->
+
 </manifest>
