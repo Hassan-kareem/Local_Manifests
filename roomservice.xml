@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-<!-- Device Tree -->
-<project path="device/xiaomi/mido" name="PixelExperience-Devices/device_xiaomi_mido" remote="github" revision="thirteen-plus" />
+  <remote name="github" fetch="https://github.com/" />
+  <remote name="gitlab" fetch="https://gitlab.pixelexperience.org/android" />
 
-<!-- Kernel Tree -->
-<project path="kernel/xiaomi/mido" name="PixelExperience-Devices/kernel_xiaomi_mido" remote="github" revision="thirteen" />
+  <!-- Device Tree -->
+  <project path="device/xiaomi/mido" name="PixelExperience-Devices/device_xiaomi_mido" remote="github" revision="thirteen-plus" />
 
-<!-- Vendor Tree -->
-<project path="vendor/xiaomi/mido" name="android/vendor-blobs/vendor_xiaomi_mido" remote="gitlab" revision="thirteen" />
+  <!-- Kernel Tree -->
+  <project path="kernel/xiaomi/mido" name="PixelExperience-Devices/kernel_xiaomi_mido" remote="github" revision="thirteen" />
+
+  <!-- Vendor Tree -->
+  <project path="vendor/xiaomi/mido" name="android/vendor-blobs/vendor_xiaomi_mido" remote="gitlab" revision="thirteen" />
 </manifest>
