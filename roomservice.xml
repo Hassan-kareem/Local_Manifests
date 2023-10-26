@@ -5,7 +5,7 @@
    fetch="https://github.com/lwys-trash-oct23/" />
   <remote name="SR"
     fetch="https://github.com/srkndenis"
-    <remote name="los"
+  <remote name="los"
       fetch="https://github.com/LineageOS/"
 
   <remove-project path="hardware/qcom-caf/wlan" />
