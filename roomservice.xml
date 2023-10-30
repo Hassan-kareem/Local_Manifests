@@ -9,12 +9,12 @@
   <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="lwys" revision="lineage-20.0" />
   
   <remove-project path="hardware/qcom-caf/wlan" />
-  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="lwys" revision="lineage-20.0-caf" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="lwys" revision="lineage-20.0" />
   
   <!-- Samsung MSM8916 Common Repos -->
-  <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="lwys" revision="lineage-20" />
+  <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="los" revision="lineage-20" />
   <!-- Samsung Hardware Repo -->
-  <project path="hardware/samsung" name="android_hardware_samsung" remote="lwys" revision="lineage-20" />
+  <project path="hardware/samsung" name="android_hardware_samsung" remote="los" revision="lineage-20" />
   
   <!-- GCC 7.2 arm-eabi -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" remote="SR" revision="master"/>
@@ -22,7 +22,7 @@
   <project name="android_hardware_qcom_display" path="hardware/qcom-caf/msm8916/display" remote="lwys" revision="lineage-20.0-caf-msm8916" />
   <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy-legacy" remote="lwys" revision="lineage-20.0-legacy" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom-caf/msm8916/audio" remote="lwys" revision="lineage-20.0-caf-msm8916" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom-caf/msm8916/media" remote="los" revision="lineage-19.0-caf-msm8916" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom-caf/msm8916/media" remote="los" revision="lineage-20.0-caf-msm8916" />
   <project name="android_system_tools_dtbtool" path="system/tools/dtbtool" remote="los" revision="lineage-18.1" />
   <extend-project name="LineageOS/android_hardware_qcom-caf_common">
     <!-- add guards for CAF repositories -->
