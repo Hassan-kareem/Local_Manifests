@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="lwys" fetch="https://github.com/lwys-trash-oct23" />
-  <remote name="SR" fetch="https://github.com/srkndenis" />
-  <remote name="los" fetch="https://github.com/LineageOS" />
-  
-  <project path="device/samsung/a5lte" name="android_device_samsung_a5lte" remote="lwys" revision="lineage-20.0" />
-  <project path="kernel/samsung/msm8916" name="android_kernel_samsung_msm8916" remote="lwys" revision="lineage-20.0" />
-  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="lwys" revision="lineage-20.0" />
-  
-  <remove-project path="hardware/qcom-caf/wlan" />
-  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="lwys" revision="lineage-20.0" />
+  <remote name="NO"
+    fetch="https://github.com/lwys-trash-oct23" />
+  <remote name="SR"
+    fetch="https://github.com/srkndenis" />
+  <remote name="los"
+    fetch="https://github.com/LineageOS" />
   
   <!-- Samsung MSM8916 Common Repos -->
   <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="los" revision="lineage-20" />
@@ -19,10 +15,10 @@
   <!-- GCC 7.2 arm-eabi -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" remote="SR" revision="master"/>
   
-  <project name="android_hardware_qcom_display" path="hardware/qcom-caf/msm8916/display" remote="lwys" revision="lineage-20.0-caf-msm8916" />
-  <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy-legacy" remote="lwys" revision="lineage-20.0-legacy" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom-caf/msm8916/audio" remote="lwys" revision="lineage-20.0-caf-msm8916" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom-caf/msm8916/media" remote="los" revision="lineage-20.0-caf-msm8916" />
+  <project name="android_hardware_qcom_display" path="hardware/qcom-caf/msm8916/display" remote="NO" revision="lineage-20.0-caf-msm8916" />
+  <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy-legacy" remote="NO" revision="lineage-20.0-legacy" />
+  <project name="android_hardware_qcom_audio" path="hardware/qcom-caf/msm8916/audio" remote="NO" revision="lineage-20.0-caf-msm8916" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom-caf/msm8916/media" remote="los" revision="lineage-19.0-caf-msm8916" />
   <project name="android_system_tools_dtbtool" path="system/tools/dtbtool" remote="los" revision="lineage-18.1" />
   <extend-project name="LineageOS/android_hardware_qcom-caf_common">
     <!-- add guards for CAF repositories -->
@@ -36,4 +32,11 @@
   
   <!-- TODO: avoid -->
   <project name="android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="los" revision="lineage-18.1" />
+
+  <!-- Device tree -->
+  <project name="android_device_samsung_a5lte" path="device/samsung/a5lte" remote="NO" revision="lineage-20.0" />
+  <!-- Vendor tree -->
+  <project name="proprietary_vendor_samsung" path="vendor/samsung" remote="NO" revision="lineage-20.0" />
+  <!-- Kernel tree -->
+  <project name="android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" remote="NO" revision="lineage-20.0" />
 </manifest>
