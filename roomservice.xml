@@ -2,11 +2,11 @@
 
 <manifest>
   <remote name="lwys"
-   fetch="https://github.com/lwys-trash-oct23/" />
+   fetch="https://github.com/lwys-trash-oct23" />
   <remote name="SR"
     fetch="https://github.com/srkndenis"
   <remote name="los"
-      fetch="https://github.com/LineageOS/"
+      fetch="https://github.com/LineageOS"
 
   <remove-project path="hardware/qcom-caf/wlan" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="lwys" revision="lineage-20.0-caf" />
