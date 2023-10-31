@@ -6,6 +6,8 @@
     fetch="https://github.com/srkndenis" />
   <remote name="los"
     fetch="https://github.com/LineageOS" />
+  <remote name="Hassan"
+    fetch="https://github.com/Hassan-kareem" />
   
   <!-- Samsung MSM8916 Common Repos -->
   <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="los" revision="lineage-20" />
@@ -34,7 +36,7 @@
   <project name="android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="los" revision="lineage-18.1" />
 
   <!-- Device tree -->
-  <project name="android_device_samsung_a5lte" path="device/samsung/a5lte" remote="NO" revision="lineage-20.0" />
+  <project name="android_device_samsung_a5lte" path="device/samsung/a5lte" remote="Hassan" revision="lineage-20.0" />
   <!-- Vendor tree -->
   <project name="proprietary_vendor_samsung" path="vendor/samsung" remote="NO" revision="lineage-20.0" />
   <!-- Kernel tree -->
