@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="PE"
+    fetch="https://github.com/PixelExperience-Devices" />
+  <remote name="Gitlab"
+    fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
+  <remote name="NRanjan"
+    fetch="https://github.com/NRanjan-17" />
+
+  <!-- Device Tree -->
+  <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="PE" revision="thirteen-plus" />
+  <!-- Kernel Tree -->
+  <project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="NRanjan" revision="thirteen" />
+  <!-- Vendor Tree -->
+  <project path="vendor/xiaomi/mido" name="vendor_xiaomi_mido" remote="Gitlab" revision="thirteen" />
+
+</manifest>
