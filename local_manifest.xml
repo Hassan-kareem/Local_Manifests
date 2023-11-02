@@ -6,7 +6,12 @@
     fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
   <remote name="NRanjan"
     fetch="https://github.com/NRanjan-17" />
+  <remote name="Hassan"
+    fetch="https://github.com/Hassan-kareem" />
 
+  <remove-project path="vendor/aosp" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="Hassan" revision="thirteen-plus" />
+  
   <!-- Device Tree -->
   <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="PE" revision="thirteen-plus" />
   <!-- Kernel Tree -->
