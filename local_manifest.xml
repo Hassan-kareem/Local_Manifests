@@ -9,8 +9,8 @@
   <remote name="Hassan"
     fetch="https://github.com/Hassan-kareem" />
 
-  <remove-project path="vendor/aosp" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="Hassan" revision="thirteen-plus" />
+  <remove-project path="frameworks/base/data/fonts" />
+  <project path="frameworks/base/data/fonts" name="Fonts" remote="Hassan" revision="main" />
   
   <!-- Device Tree -->
   <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="PE" revision="thirteen-plus" />
