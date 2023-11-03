@@ -16,6 +16,6 @@
   <!-- Vendor Tree -->
   <project path="vendor/xiaomi/mido" name="vendor_xiaomi_mido" remote="Gitlab" revision="thirteen" />
   
-  <remove-project path="frameworks/base/data/fonts/" />
-  <project path="frameworks/base/data/fonts/" name="fonts" remote="Hassan" revision="thirteen-plus" />
+  <remove-project path="frameworks/base" />
+  <project path="frameworks/base" name="frameworks_base" remote="Hassan" revision="thirteen-plus" />
 </manifest>
