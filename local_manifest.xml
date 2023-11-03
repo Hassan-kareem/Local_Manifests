@@ -8,9 +8,6 @@
     fetch="https://github.com/NRanjan-17" />
   <remote name="Hassan"
     fetch="https://github.com/Hassan-kareem" />
-
-  <remove-project path="frameworks/base/data/fonts" />
-  <project path="frameworks/base/data/fonts" name="Fonts" remote="Hassan" revision="main" />
   
   <!-- Device Tree -->
   <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="PE" revision="thirteen-plus" />
@@ -18,4 +15,7 @@
   <project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="NRanjan" revision="thirteen" />
   <!-- Vendor Tree -->
   <project path="vendor/xiaomi/mido" name="vendor_xiaomi_mido" remote="Gitlab" revision="thirteen" />
+  
+  <remove-project path="frameworks/base/data/fonts/" />
+  <project path="frameworks/base/data/fonts/" name="fonts" remote="Hassan" revision="thirteen-plus" />
 </manifest>
