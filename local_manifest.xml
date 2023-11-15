@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="PE"
-    fetch="https://github.com/PixelExperience-Devices" />
-  <remote name="Gitlab"
-    fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
-  <remote name="NRanjan"
-    fetch="https://github.com/NRanjan-17" />
+  
   <remote name="Hassan"
     fetch="https://github.com/Hassan-kareem" />
   
   <!-- Device Tree -->
-  <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="PE" revision="thirteen-plus" />
+  <project path="device/xiaomi/mido" name="android_device_xiaomi_mido" remote="Hassan" revision="Evo-udc" />
   <!-- Kernel Tree -->
-  <project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="NRanjan" revision="thirteen" />
+  <project path="kernel/xiaomi/mido" name="android_kernel_xiaomi_mido" remote="Hassan" revision="lineage-20.0" />
   <!-- Vendor Tree -->
-  <project path="vendor/xiaomi/mido" name="vendor_xiaomi_mido" remote="Gitlab" revision="thirteen" />
+  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="Hassan" revision="lineage-20.0" />
   
+  <!-- Extra -->
   <remove-project path="frameworks/base" />
-  <project path="frameworks/base" name="frameworks_base" remote="Hassan" revision="thirteen-plus" />
+  <project path="frameworks/base" name="frameworks_base" remote="Hassan" revision="udc" />
 </manifest>
