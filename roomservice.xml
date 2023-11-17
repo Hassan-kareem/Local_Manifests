@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="Dobby"
-    fetch="https://github.com/lwys-trash-oct23" />
-  <remote name="SR"
-    fetch="https://github.com/srkndenis" />
-  <remote name="los"
-    fetch="https://github.com/LineageOS" />
+  <remote name="Dobby" fetch="https://github.com/lwys-trash-oct23" />
+  <remote name="SR" fetch="https://github.com/srkndenis" />
+  <remote name="los" fetch="https://github.com/LineageOS" />
   
   <!-- Samsung MSM8916 Common Repos -->
   <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="los" revision="lineage-20" />
@@ -15,7 +12,7 @@
   <!-- GCC 7.2 arm-eabi -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" remote="SR" revision="master"/>
   <remove-project path="hardware/qcom-caf/wlan" />
-    <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="Dobby" revision="lineage-20.0-caf" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="Dobby" revision="lineage-20.0-caf" />
   
   <project name="lineage-18.1-a5lte-builds" path="hardware/lineage/interfaces" remote="Dobby" revision="main" />
   <project name="android_hardware_qcom_display" path="hardware/qcom-caf/msm8916/display" remote="Dobby" revision="lineage-20.0-caf-msm8916" />
@@ -24,9 +21,9 @@
   <project name="android_hardware_qcom_media" path="hardware/qcom-caf/msm8916/media" remote="los" revision="lineage-19.0-caf-msm8916" />
   <project name="android_system_tools_dtbtool" path="system/tools/dtbtool" remote="los" revision="lineage-18.1" />
   <extend-project name="LineageOS/android_hardware_qcom-caf_common">
-    <!-- add guards for CAF repositories -->
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8916/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8916/Android.mk" />
+  <!-- add guards for CAF repositories -->
+  <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8916/Android.bp" />
+  <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8916/Android.mk" />
   </extend-project>
   
   <project name="android_external_bson" path="external/bson" remote="los" revision="lineage-20" />
