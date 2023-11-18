@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="Dobby" fetch="https://github.com/orgs/lwys-trash-oct23" />
-  <remote name="SR" fetch="https://github.com/srkndenis" />
-  <remote name="los" fetch="https://github.com/LineageOS" />
+  <remote name="Dobby"
+    fetch="https://github.com/lwys-trash-oct23" />
+  <remote name="SR"
+    fetch="https://github.com/srkndenis" />
+  <remote name="los"
+    fetch="https://github.com/LineageOS" />
+  <!-- Device tree -->
+  <project name="android_device_samsung_a5lte" path="device/samsung/a5lte" remote="Dobby" revision="lineage-20.0" />
+  <!-- Vendor tree -->
+  <project name="proprietary_vendor_samsung" path="vendor/samsung" remote="Dobby" revision="lineage-20.0" />
+  <!-- Kernel tree -->
+  <project name="android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" remote="Dobby" revision="lineage-20.0" />
   
   <!-- Samsung MSM8916 Common Repos -->
   <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="los" revision="lineage-20" />
@@ -32,11 +41,5 @@
   
   <!-- TODO: avoid -->
   <project name="android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="los" revision="lineage-18.1" />
-  
-  <!-- Device tree -->
-  <project name="android_device_samsung_a5lte" path="device/samsung/a5lte" remote="Dobby" revision="lineage-20.0" />
-  <!-- Vendor tree -->
-  <project name="proprietary_vendor_samsung" path="vendor/samsung" remote="Dobby" revision="lineage-20.0" />
-  <!-- Kernel tree -->
-  <project name="android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" remote="Dobby" revision="lineage-20.0" />
 </manifest>
+  
