@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="Dobby" fetch="https://github.com/lwys-trash-oct23" />
+  <remote name="Dobby" fetch="https://github.com/orgs/lwys-trash-oct23" />
   <remote name="SR" fetch="https://github.com/srkndenis" />
   <remote name="los" fetch="https://github.com/LineageOS" />
   
