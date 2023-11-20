@@ -6,15 +6,15 @@
   <remote name="lineage-pvt" fetch="https://github.com/LineageOS-Pvt" />
   
   <!-- Device Tree -->
-  <project path="device/xiaomi/mido" name="android_device_xiaomi_mido" remote="Hassan" revision="lineage-20.0" />
+  <project path="device/xiaomi/mido" name="android_device_xiaomi_mido" remote="Hassan" revision="lineage-20.0" clone-depth="1" />
   <!-- Kernel Tree -->
-  <project path="kernel/xiaomi/mido" name="android_kernel_xiaomi_mido" remote="Hassan" revision="lineage-20.0" />
+  <project path="kernel/xiaomi/mido" name="android_kernel_xiaomi_mido" remote="Hassan" revision="lineage-20.0" clone-depth="1" />
   <!-- Vendor Tree -->
-  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="Hassan" revision="lineage-20.0" />
+  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="Hassan" revision="lineage-20.0" clone-depth="1" />
   
   <!-- Extra -->
   <remove-project path="frameworks/base" />
   <remove-project path="vendor/lineage" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="Hassan" revision="lineage-20.0" />
-  <project path="vendor/lineage" name="android_vendor_lineage" remote="lineage-pvt" revision="lineage-20.0" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="Hassan" revision="lineage-20.0" clone-depth="1" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="lineage-pvt" revision="lineage-20.0" clone-depth="1" />
 </manifest>
