@@ -1,31 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  
   <remote name="zeelog"
     fetch="https://github.com/zeelog" />
   <remote name="lineage-pvt"
     fetch="https://github.com/LineageOS-Pvt" />
   <remote name="NRanjan"
     fetch="https://github.com/NRanjan-17" />
+  <!-- Remove -->
+  <remove-project name="LineageOS/android_build" />
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
+  <remove-project name="LineageOS/android_system_core" />
+  <remove-project path="LineageOS/android_packages_apps_Trebuchet" />
+  <remove-project path="LineageOS/android_packages_apps_Settings" />
+  <remove-project name="LineageOS/android_packages_apps_Messaging" />
+  <!-- Add -->
+  <project path="frameworks/base" name="android_frameworks_base" remote="lineage-pvt" revision="lineage-20.0" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="lineage-pvt" revision="lineage-20.0" />
+  <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="lineage-pvt" revision="lineage-20.0" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="lineage-pvt" revision="lineage-20.0" />
+  <project path="android/build" name="android_build" remote="lineage-pvt" revision="lineage-20.0" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="lineage-pvt" revision="lineage-20.0" />
+  <project path="system/core" name="android_system_core" remote="lineage-pvt" revision="lineage-20.0" />
   
   <!-- Device Tree -->
-  <project path="device/xiaomi/mido" name="android_device_xiaomi_mido" remote="zeelog" revision="lineage-20.0" clone-depth="1" />
+  <project path="device/xiaomi/mido" name="android_device_xiaomi_mido" remote="zeelog" revision="lineage-20.0" />
   <!-- Kernel Tree -->
-  <project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="NRanjan" revision="thirteen" clone-depth="1" />
+  <project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="NRanjan" revision="thirteen" />
   <!-- Vendor Tree -->
-  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="zeelog" revision="lineage-20.0" clone-depth="1" />
+  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="zeelog" revision="lineage-20.0" />
   
-  <!-- Extra -->
-  <remove-project path="frameworks/base" />
-  <remove-project path="vendor/lineage" />
-  <remove-project path="packages/apps/Trebuchet" />
-  <remove-project path="packages/apps/Settings" />
-  <remove-project path="packages/apps/Messaging" />
-  <remove-project path="android/build" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="lineage-pvt" revision="lineage-20.0" clone-depth="1" />
-  <project path="vendor/lineage" name="android_vendor_lineage" remote="lineage-pvt" revision="lineage-20.0" clone-depth="1" />
-  <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="lineage-pvt" revision="lineage-20.0" clone-depth="1" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="lineage-pvt" revision="lineage-20.0" clone-depth="1" />
-  <project path="android/build" name="android_build" remote="lineage-pvt" revision="lineage-20.0" clone-depth="1" />
-  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="lineage-pvt" revision="lineage-20.0" clone-depth="1" />
+  <project path="build/make" name="android_build" remote="lineage-pvt" revision="lineage-20.0" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
 </manifest>
