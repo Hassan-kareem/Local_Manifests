@@ -10,14 +10,14 @@
     <!-- Samsung MSM8916 Common Repos -->
     <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common"
         revision="lineage-20" />
-
     <!-- Samsung Hardware Repo -->
     <project path="hardware/samsung" name="LineageOS/android_hardware_samsung"
         revision="lineage-20" />
     <project path="hardware/lineage/interfaces" name="lwys-trash-oct23/lineage-18.1-a5lte-builds" revision="main" />
     <!-- GCC 7.2 arm-eabi -->
-    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" revision="master"/>
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" revision="master" clone-depth="1"/>
     
+    <!-- For build fixs -->
     <remove-project path="hardware/qcom-caf/wlan" />
     <project path="hardware/qcom-caf/wlan" name="lwys-trash-oct23/android_hardware_qcom_wlan"
         revision="lineage-20.0-caf" />
@@ -26,9 +26,7 @@
     <project path="device/lineage/sepolicy" name="lwys-trash-oct23/android_device_lineage_sepolicy" revision="lineage-20.0" />
     <project name="lwys-trash-oct23/android_device_qcom_sepolicy" path="device/qcom/sepolicy-legacy" revision="lineage-20.0-legacy" />
     <project name="lwys-trash-oct23/android_hardware_qcom_audio" path="hardware/qcom-caf/msm8916/audio" revision="lineage-20.0-caf-msm8916" />
-    <project name="LineageOS/android_hardware_qcom_media" path="hardware/qcom-caf/msm8916/media" revision="lineage-19.0-caf-msm8916" />
-    <project name="lwys-trash-oct23/android_hardware_qcom_display" path="hardware/qcom-caf/msm8916/display" revision="lineage-20.0-caf-msm8916" />
-
+    
     <project name="LineageOS/android_external_bson" path="external/bson" 
         revision="lineage-20" />
     <project name="LineageOS/android_system_qcom" path="system/qcom"
