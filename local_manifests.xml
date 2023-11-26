@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- Device Tree -->
-    <project name="lwys-trash-oct23/android_device_samsung_a5lte" path="device/samsung/a5lte" revision="lineage-20.0"/>
-    <!-- Kernel Tree -->
-    <project name="lwys-trash-oct23/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" revision="lineage-20.0"/>
-    <!-- Vendor Tree -->
-    <project name="lwys-trash-oct23/proprietary_vendor_samsung" path="vendor/samsung" revision="lineage-20.0"/>
     
     <!-- Samsung MSM8916 Common Repos -->
     <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common"
@@ -13,22 +7,36 @@
     <!-- Samsung Hardware Repo -->
     <project path="hardware/samsung" name="LineageOS/android_hardware_samsung"
         revision="lineage-20" />
-    <project path="hardware/lineage/interfaces" name="lwys-trash-oct23/lineage-18.1-a5lte-builds" revision="main" />
-    <!-- GCC 7.2 arm-eabi -->
+   
+     <!-- GCC 7.2 arm-eabi -->
     <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" revision="master" clone-depth="1"/>
     
     <!-- For build fixs -->
     <remove-project path="hardware/qcom-caf/wlan" />
     <project path="hardware/qcom-caf/wlan" name="lwys-trash-oct23/android_hardware_qcom_wlan"
         revision="lineage-20.0-caf" />
+    <project path="hardware/lineage/interfaces" name="lwys-trash-oct23/android_hardware_lineage_interfaces" revision="main" />
 
     <remove-project path="device/lineage/sepolicy" />
     <project path="device/lineage/sepolicy" name="lwys-trash-oct23/android_device_lineage_sepolicy" revision="lineage-20.0" />
     <project name="lwys-trash-oct23/android_device_qcom_sepolicy" path="device/qcom/sepolicy-legacy" revision="lineage-20.0-legacy" />
     <project name="lwys-trash-oct23/android_hardware_qcom_audio" path="hardware/qcom-caf/msm8916/audio" revision="lineage-20.0-caf-msm8916" />
+    <extend-project name="LineageOS/android_hardware_qcom-caf_common">
+    <!-- add guards for CAF repositories -->
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8916/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8916/Android.mk" />
+    </extend-project>
     
     <project name="LineageOS/android_external_bson" path="external/bson" 
         revision="lineage-20" />
     <project name="LineageOS/android_system_qcom" path="system/qcom"
         revision="lineage-20" />
+    
+    <!-- Device Tree -->
+    <project name="lwys-trash-oct23/android_device_samsung_a5lte" path="device/samsung/a5lte" revision="lineage-20.0"/>
+    <!-- Kernel Tree -->
+    <project name="lwys-trash-oct23/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" revision="lineage-20.0"/>
+    <!-- Vendor Tree -->
+    <project name="lwys-trash-oct23/proprietary_vendor_samsung" path="vendor/samsung" revision="lineage-20.0"/>
+    
 </manifest>
