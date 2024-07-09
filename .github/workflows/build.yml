@@ -1,6 +1,6 @@
 name: Build LineageOS
 
-on: CI
+on:  [push, pull_request]
 
 jobs:
   build:
