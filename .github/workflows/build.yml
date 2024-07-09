@@ -1,6 +1,6 @@
 name: Build LineageOS
 
-on:  [push, pull_request]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -17,7 +17,10 @@ jobs:
     - name: Set up environment
       run: |
         sudo apt-get update
-        sudo apt-get install openjdk-11-jdk -y
+        sudo apt-get install openjdk-11-jdk python3 -y
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/repo
+        chmod a+x ~/repo
+        sudo mv ~/repo /usr/local/bin/repo
 
     - name: Checkout sources
       uses: actions/checkout@v2
