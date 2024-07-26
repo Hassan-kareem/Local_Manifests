@@ -3,6 +3,15 @@
   <remote name="zeelog"
           fetch="https://github.com/zeelog" />
   
+  <remote name="LineageOS"
+          fetch="https://github.com/LineageOS" />
+  
+  <!-- Device Tree -->
+  <project path="hardware/xiaomi" 
+           name="android_hardware_xiaomi" 
+           remote="LineageOS" 
+           revision="lineage-21" />
+  
   <!-- Device Tree -->
   <project path="device/xiaomi/mido" 
            name="android_device_xiaomi_mido" 
@@ -20,4 +29,5 @@
            name="proprietary_vendor_xiaomi" 
            remote="zeelog" 
            revision="lineage-21.0" />
+  
 </manifest>
