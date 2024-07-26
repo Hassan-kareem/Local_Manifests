@@ -14,8 +14,8 @@
 
     <!-- GCC 7.2 arm-eabi -->
     <!-- OK so now you may want to install multilib ... -->
-    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="Hassan-kareem/prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" remote="github" revision="lineage-20.0" clone-depth="1" />
-    
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="srkndenis/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" revision="master" clone-depth="1" />
+
     <!-- For build fixs -->
     <remove-project path="hardware/qcom-caf/wlan" />
     <project path="hardware/qcom-caf/wlan" name="lwys-trash-oct23/android_hardware_qcom_wlan"
