@@ -6,9 +6,14 @@
   <remote name="LineageOS"
           fetch="https://github.com/LineageOS" />
   
-  <!-- Device Tree -->
+  <!-- Hardware Tree -->
   <project path="hardware/xiaomi" 
            name="android_hardware_xiaomi" 
+           remote="LineageOS" 
+           revision="lineage-21" />
+  <!-- Wlan Tree -->
+  <project path="hardware/qcom/wlan" 
+           name="android_hardware_qcom_wlan" 
            remote="LineageOS" 
            revision="lineage-21" />
   
