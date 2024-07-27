@@ -11,12 +11,6 @@
            name="android_hardware_xiaomi" 
            remote="LineageOS" 
            revision="lineage-21" />
-  <!-- Wlan Tree -->
-  <remove-project name="android_hardware_qcom_wlan" />
-  <project path="hardware/qcom/wlan" 
-           name="android_hardware_qcom_wlan" 
-           remote="LineageOS" 
-           revision="lineage-21.0" />
   
   <!-- Device Tree -->
   <project path="device/xiaomi/mido" 
