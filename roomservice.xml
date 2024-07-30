@@ -2,13 +2,11 @@
 <manifest>
   <remote name="zeelog"
     fetch="https://github.com/zeelog" />
-  <remote name="NRanjan"
-    fetch="https://github.com/NRanjan-17" />
   
   <!-- Device Tree -->
   <project path="device/xiaomi/mido" name="android_device_xiaomi_mido" remote="zeelog" revision="lineage-20.0" />
   <!-- Kernel Tree -->
-  <project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="NRanjan" revision="thirteen" />
+  <project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="zeelog" revision="lineage-20.0" />
   <!-- Vendor Tree -->
   <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="zeelog" revision="lineage-20.0" />
 </manifest>
