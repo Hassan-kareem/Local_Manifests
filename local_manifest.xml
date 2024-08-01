@@ -5,6 +5,8 @@
   
   <remote name="LineageOS"
           fetch="https://github.com/LineageOS" />
+  <remote name="NRanjan"
+          fetch="https://github.com/NRanjan-17" />
   
   <!-- Hardware Tree -->
   <project path="hardware/xiaomi" 
@@ -20,9 +22,9 @@
   
   <!-- Kernel Tree -->
   <project path="kernel/xiaomi/mido" 
-           name="android_kernel_xiaomi_mido" 
-           remote="zeelog" 
-           revision="lineage-21.0" />
+           name="kernel_xiaomi_mido" 
+           remote="NRanjan" 
+           revision="fourteen-v3" />
   
   <!-- Vendor Tree -->
   <project path="vendor/xiaomi" 
