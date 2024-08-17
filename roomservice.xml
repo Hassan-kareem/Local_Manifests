@@ -20,5 +20,4 @@
   
   <!-- Vendor Tree -->
   <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="zeelog" revision="lineage-20.0" />
-
 </manifest>
