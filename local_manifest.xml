@@ -3,15 +3,13 @@
   
   <remote name="Hassan"
     fetch="https://github.com/Hassan-kareem" />
+  <remote name="NRanjan-17"
+    fetch="https://github.com/NRanjan-17" />
   
   <!-- Device Tree -->
-  <project path="device/xiaomi/mido" name="android_device_xiaomi_mido" remote="Hassan" revision="Evo-udc" />
+  <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="Hassan" revision="lineage-20.0" />
   <!-- Kernel Tree -->
-  <project path="kernel/xiaomi/mido" name="android_kernel_xiaomi_mido" remote="Hassan" revision="lineage-20.0" />
-  <!-- Vendor Tree -->
-  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="Hassan" revision="lineage-20.0" />
-  
-  <!-- Extra -->
-  <remove-project path="frameworks/base" />
-  <project path="frameworks/base" name="frameworks_base" remote="Hassan" revision="udc" />
+  <project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="NRanjan-17" revision="thirteen" />
+  <!-- Vendor Tree --> 
+  <project path="vendor/xiaomi/mido" name="vendor_xiaomi_mido" remote="NRanjan-17" revision="thirteen" />
 </manifest>
