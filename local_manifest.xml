@@ -6,8 +6,8 @@
   <remote name="LineageOS"
     fetch="https://github.com/LineageOS" />
 
-  <remote name="NRanjan-17"
-    fetch="https://github.com/NRanjan-17" />
+  <remote name="Hassan"
+    fetch="https://github.com/Hassan-kareem" />
   
   <!-- Hardware Tree -->
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="LineageOS" revision="lineage-20" />
