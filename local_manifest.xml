@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="PE"
-    fetch="https://github.com/PixelExperience-Devices" />
-  <remote name="Gitlab"
-    fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
+  <remote name="LineageOS"
+    fetch="https://github.com/LineageOS" />
   <remote name="NRanjan"
     fetch="https://github.com/NRanjan-17" />
   <remote name="Hassan"
     fetch="https://github.com/Hassan-kareem" />
+  <remote name="zeelog"
+    fetch="https://github.com/zeelog" />
   
+  <!-- Hardware Tree -->
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="LineageOS" revision="lineage-20" />
   <!-- Device Tree -->
-  <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="PE" revision="thirteen-plus" />
+  <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="Hassan" revision="lineage-20.0" />
   <!-- Kernel Tree -->
-  <project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="NRanjan" revision="thirteen" />
+  <project path="kernel/xiaomi/mido" name="android_kernel_xiaomi_mido" remote="zeelog" revision="lineage-21.0" />
   <!-- Vendor Tree -->
-  <project path="vendor/xiaomi/mido" name="vendor_xiaomi_mido" remote="Gitlab" revision="thirteen" />
-  
-  <remove-project path="frameworks/base" />
-  <project path="frameworks/base" name="frameworks_base" remote="Hassan" revision="thirteen-plus" />
+  <project path="vendor/xiaomi/mido" name="vendor_xiaomi_mido" remote="NRanjan" revision="thirteen" />
 </manifest>
