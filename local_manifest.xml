@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest> 
+<manifest>
   <remote name="PixelOS" fetch="https://github.com/PixelOS-Devices" />
   <remote name="Hassan" fetch="https://github.com/Hassan-kareem" />
   
   <!-- Device Tree -->
   <project path="device/xiaomi/mido" name="PixelOS_device_xiaomi_mido" remote="Hassan" revision="thirteen" />
+  
   <!-- Kernel Tree -->
   <project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="PixelOS" revision="thirteen" />
-  <!-- Vendor Tree --> 
-  <project path="vendor/xiaomi_mido" name="vendor_xiaomi_mido" remote="PixelOS" revision="thirteen" />
+  
+  <!-- Vendor Tree -->
+  <project path="vendor/xiaomi/mido" name="vendor_xiaomi_mido" remote="PixelOS" revision="thirteen" />
 </manifest>
