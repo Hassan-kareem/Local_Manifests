@@ -16,7 +16,7 @@
   <project path="device/xiaomi/mido" name="android_device_xiaomi_mido" remote="Hassan" revision="PE-13" />
 
   <!-- Kernel Tree -->
-  <project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="thirteen" revision="thirteen" />
+  <project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="NRanjan" revision="thirteen" />
 
   <!-- Vendor Tree -->
   <project path="vendor/xiaomi/mido" name="vendor_xiaomi_mido" remote="Gitlab" revision="thirteen" />
