@@ -17,9 +17,9 @@
   <remove-project path="frameworks/base" />
   <remove-project path="packages/apps/Trebuchet" />
   <remove-project path="packages/apps/Settings" />
-  <remove-project path="android/build" />
+  <remove-project path="android/make" />
   <project path="frameworks/base" name="android_frameworks_base" remote="Hassan" revision="lineage-20.0" />
   <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="Hassan" revision="lineage-20.0" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="Hassan" revision="lineage-20.0" />
-  <project path="android/build" name="android_build" remote="Hassan" revision="lineage-20.0" />
+  <project path="android/make" name="android_build" remote="Hassan" revision="lineage-20.0" />
 </manifest>
