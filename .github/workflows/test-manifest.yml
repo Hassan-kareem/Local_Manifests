@@ -1,13 +1,9 @@
 name: Test Local Manifest
 
-on:
-  push:
-    branches:
-      - 20.0-mido
 # Allows the workflow to be triggered manually
 on:
-  workflow_dispatch
-  
+  workflow_dispatch:
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -27,11 +23,11 @@ jobs:
       - name: Initialize repo
         run: |
           repo init -u https://github.com/Hassan-kareem/local_manifests.git -b 20.0-mido
-
+      
       - name: Sync repo
         run: |
           repo sync --force-sync --no-clone-bundle --no-tags --prune
-
+      
       - name: Validate manifest
         run: |
           # You can add additional validation scripts here if needed.
