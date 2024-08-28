@@ -4,7 +4,10 @@ on:
   push:
     branches:
       - 20.0-mido
-
+# Allows the workflow to be triggered manually
+on:
+  workflow_dispatch
+  
 jobs:
   test:
     runs-on: ubuntu-latest
