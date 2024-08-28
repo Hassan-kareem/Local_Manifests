@@ -22,7 +22,7 @@ jobs:
 
       - name: Initialize repo
         run: |
-          repo init -u https://github.com/Hassan-kareem/local_manifests.git -b 20.0-mido
+          repo init -u https://github.com/Hassan-kareem/local_manifests.git -b 20.0-mido -m local_manifest.xml
       
       - name: Sync repo
         run: |
