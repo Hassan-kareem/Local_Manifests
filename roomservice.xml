@@ -13,10 +13,10 @@
   <!-- Vendor Tree -->
   <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="zeelog" revision="lineage-20.0" />
   
-  <!-- Remove existing projects -->
-  <remove-project path="frameworks/base" />
-  <remove-project path="packages/apps/Settings" />
-  <remove-project path="build/make" />
+  <!-- Remove Original Projects -->
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <remove-project name="LineageOS/android_packages_apps_Settings" />
+  <remove-project name="LineageOS/android_build" />
   
   <!-- Add custom projects -->
   <project path="frameworks/base" name="android_frameworks_base" remote="Hassan" revision="lineage-20.0" />
